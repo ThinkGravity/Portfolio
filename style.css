@@ -1,0 +1,187 @@
+* /*HEADER*/
+.header {
+    padding: 5px;
+    text-align: right;
+    background: #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  /*NAVIGATIONSBAR*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2A2A2A;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    Color: white;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  /*Beholder farve når man skifter hjemmeside*/
+  .active {
+    background-color: #7a7a7a;
+  }
+
+  .navnavne{
+    font-family: 'Kanit', sans-serif;
+  }
+
+/*Overskrift*/
+.ommig{
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+  .portfolio{
+      text-align: center;
+      font-family: 'Kanit', sans-serif;
+  }
+
+  /*Billede 1 - Website*/
+  .container{
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    max-width: 400px;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #FADCE0;
+    color: #000000;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  /*Billede 2 - Ikoner*/
+  .container2 {
+    position: relative;
+    width: 100%;
+    margin-top:5%;
+  }
+
+  .image2 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    max-width: 400px;
+  }
+
+  .middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container2:hover .image2 {
+    opacity: 0.3;
+  }
+  
+  .container2:hover .middle2 {
+    opacity: 1;
+  }
+
+  .text2 {
+    background-color: #FADCE0;
+    color: #000000;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Website-siden*/
+  .starten{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+  }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  position: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2A2A2A;
+    color: white;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
